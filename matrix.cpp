@@ -4,14 +4,14 @@
 #define ROWS 10
 #define COLS 10
 
-void random_walk(int(*a)[COLS], int rows);
+void random_walked(int(*a)[COLS], int rows);
 void show(int *a, int rows, int cols);
 
 int main(void)
 {
 	int A[ROWS][COLS];
 
-	random_walk(A, ROWS); /// 
+	random_walked(A, ROWS); /// 
 
 	printf("Matrix A:");
 	show((int *)A, ROWS, COLS);
@@ -20,7 +20,7 @@ int main(void)
 	return 0;
 }
 
-void random_walk(int(*a)[COLS], int rows) /// this function assign values to 2d array
+void random_walked(int(*a)[COLS], int rows) /// this function assign values to 2d array
 {
 	for (int r = 0; r < rows; r++)
 		for (int c = 0; c < COLS; c++)
